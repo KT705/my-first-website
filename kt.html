@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee shop</title>
+  <link rel="stylesheet" href="kt.css">
+</head>
+<body>
+  <section id="Home">
+  <header>
+        <div class="logo">
+        <a href="#">Kt's Coffee Shop</a>
+        </div>
+
+        <div class="navbar">
+            <button id="opennavbr" onclick="openmenu()">&#8801;</button>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+            <button id="closenavbr" onclick="closemenu()">&times;</button>
+        </div>
+
+        <div id="cart-icon">
+            <img src="shopping-cart-2-fill.png">
+            <span class="item-count"></span>
+        </div>
+
+    </header>
+
+    <div class="cart">
+        <h1 class="cart-title">Your Cart</h1>
+        <div class="cart-container">
+        <!--<div class="cart-box">
+                <img src="cortado.png" class="cart-img">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Cortado</h2>
+                    <span class="cart-product-price">$0</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <img class="cart-remove" src="delete-bin-2-line.png"></img>
+            </div>-->
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+
+        <button class="btn-buy">Buy Now</button>
+        <button id="cart-close" onclick="closemenu()">&times;</button>
+    </div>
+    
+    <div class="hero">
+      <h1 class="best-coffee">Best Coffee</h1>
+      <h2 class="sub-title">Make your Day Great</h2>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Modi nostrum consequuntur doloribus nihil velit ratione labore totam cum temporibus ut inventore,
+        eum necessitatibus, ullam at qui itaque explicabo natus iusto?
+    </div>
+
+    </div>
+    
+    <div class="wrapper">
+
+      <div class="coffee-image">
+        <img src="kt1.png">
+      </div>
+
+      <div class="price-and-buy">
+        <span class="price">$20.99</span>
+        <button id="order">Order Now</button>
+        <button id="contact">Contact Us</button>
+      </div>
+
+    </div>
+  </section>
+
+
+    <section id="Menu">
+        <h2 class="menu-title">Our Latest Products</h2>
+        <div class="Cards">
+            <div class="card">
+                <div class="product-img">
+                    <img src="cortado.png">
+                </div>
+                <h2 class="product-title">Tado</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$2.99</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="americano.png">
+                </div>
+                <h2 class="product-title">Cano</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$0.99</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="latte.png">
+                </div>
+                <h2 class="product-title">Latte</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$1.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="cappucino.png">
+                </div>
+                <h2 class="product-title">Cino</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$1.99</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="espresso.png">
+                </div>
+                <h2 class="product-title">Presso</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$2.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="flatwite.png">
+                </div>
+                <h2 class="product-title">Wite</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$1.20</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="kt1.png">
+                </div>
+                <h2 class="product-title">A.I</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$2.99</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="product-img">
+                    <img src="mocha.png">
+                </div>
+                <h2 class="product-title">Mocha</h2>
+                <div class="product-price-and-cart">
+                    <span class="price">$2.02</span>
+                    <button class="add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Services">
+
+      <h2 class="service-title">Our Services</h2>
+      <div class="service">
+
+        <div class="work">
+          <div class="service-image">
+            <img src="k4.jpg">
+          </div>
+          <h2 class="service-title">Delivery</h2>
+          <div class="rating">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+          </div>
+        </div>
+
+        <div class="work">
+          <div class="service-image">
+            <img src="cake.png">
+          </div>
+          <h2 class="service-title">Pastries</h2>
+          <div class="rating">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+          </div>
+        </div>
+
+        <div class="work">
+          <div class="service-image">
+            <img src="milkshake.png">
+          </div>
+          <h2 class="service-title">Smoothies</h2>
+          <div class="rating">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+            <img src="star-s-fill.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="service-content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Modi nostrum consequuntur doloribus nihil velit ratione labore totam cum temporibus ut inventore,
+        eum necessitatibus, ullam at qui itaque explicabo natus iusto?
+    </div>
+
+    </section>
+
+    <section id="Gallery">
+        <h2 class="gallery-title">More Products</h2>
+        <div class="gallery-Cards">
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="cake.png">
+                </div>
+                <h2 class="gallery-product-title">Cake</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$2.99</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="muffins.png">
+                </div>
+                <h2 class="gallery-product-title">Muffins</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$0.99</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="milkshake.png">
+                </div>
+                <h2 class="gallery-product-title">Shake</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.00</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="loaf.png">
+                </div>
+                <h2 class="gallery-product-title">Bread</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.99</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="waffels.png">
+                </div>
+                <h2 class="gallery-product-title">Waffels</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$2.00</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="flatwite.png">
+                </div>
+                <h2 class="gallery-product-title">Wite</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.20</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="cappucino.png">
+                </div>
+                <h2 class="gallery-product-title">cino</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.20</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="espresso.png">
+                </div>
+                <h2 class="gallery-product-title">espresso</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.20</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="machiato.png">
+                </div>
+                <h2 class="gallery-product-title">machiato</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.20</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="americano.png">
+                </div>
+                <h2 class="gallery-product-title">americano</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$1.20</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="kt1.png">
+                </div>
+                <h2 class="gallery-product-title">A.I</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$2.99</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-product-img">
+                    <img src="mocha.png">
+                </div>
+                <h2 class="gallery-product-title">Mocha</h2>
+                <div class="gallery-product-price-and-cart">
+                    <span class="gallery-price">$2.02</span>
+                    <button class="gallery-add-to-cart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <h1 class="About-title">About Us</h1>
+
+        <div class="about-pgf-and-image">
+           <p class="about-pgf"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Expedita, autem itaque nesciunt natus laboriosam impedit ipsam voluptatem reprehenderit.
+             Illo sit repellendus ab sequi in, architecto expedita quisquam porro magnam rem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Expedita, autem itaque nesciunt natus laboriosam impedit ipsam voluptatem reprehenderit.
+             Illo sit repellendus ab sequi in, architecto expedita quisquam porro magnam rem?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Expedita, autem itaque nesciunt natus laboriosam impedit ipsam voluptatem reprehenderit.
+             Illo sit repellendus ab sequi in, architecto expedita quisquam porro magnam rem?
+            </p>
+            <div class="about-img">
+             <img src="k4.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Contact">
+        <h1 class="contact-title">Contact Us</h1>
+        <form class="contact-form">
+            <h2 class="send-us">Send Us A Message</h2>
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name" required >
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone No" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" placeholder="Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+        <div class="social-media-icons">
+            <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok" title="TikTok">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" width="32" height="32">
+            </a>
+            <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" title="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" width="32" height="32">
+            </a>
+            <a href="https://wa.me/" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" width="32" height="32">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-icon instagram" title="Instagram">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="32" height="32">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot-bottom">
+            <div class="foot">
+                 <ul>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                </ul>
+            </div>
+            <div class="foot">
+                 <ul>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                </ul>
+            </div>
+            <div class="foot">
+                 <ul>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                      <li>kt's coffee shop</li>
+                      <li>kt's coffee shop is nice</li>
+                      <li>shop at kt's coffee shop</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+  <script src="kt.js"></script>
+</body>
+</html>
